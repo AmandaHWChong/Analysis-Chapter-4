@@ -59,3 +59,42 @@ t.mpv.jcv.vp1 <- data[c("FID", "IID", "MPV_initial_SD", "JCV_VP1_RINT", "alcinta
 
 t.mpv.mcv.vp1 <- data[c("FID", "IID", "MPV_initial_SD", "MCV_VP1_RINT", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
+#Remove NAs from each subsetted dataframe
+t.plt.tg.sag1 <- na.omit(t.plt.TG.sag1)
+t.plt.cmv.pp52 <- na.omit(t.plt.cmv.pp52)
+t.plt.ebv.ead <- na.omit(t.plt.ebv.ead)
+t.plt.ebv.ebna <- na.omit(t.plt.ebv.ebna)
+t.plt.ebv.vcap18 <- na.omit(t.plt.ebv.vcap18)
+t.plt.ebv.zebra <- na.omit(t.plt.ebv.zebra)
+t.plt.hhv6.IE1A <- na.omit(t.plt.hhv6.IE1A)
+t.plt.hhv7.u14 <- na.omit(t.plt.hhv7.u14)
+t.plt.hsv1.1gG <- na.omit(t.plt.hsv1.1gG)
+t.plt.vsv.gEgI <- na.omit(t.plt.vsv.gEgI)
+t.plt.bkv.vp1 <- na.omit(t.plt.bkv.vp1)
+t.plt.jcv.vp1 <- na.omit(t.plt.jcv.vp1)
+t.plt.mcv.vp1 <- na.omit(t.plt.mcv.vp1)
+t.mpv.tg.sag1 <- na.omit(t.mpv.TG.sag1)
+t.mpv.cmv.pp52 <- na.omit(t.mpv.cmv.pp52)
+t.mpv.ebv.ead <- na.omit(t.mpv.ebv.ead)
+t.mpv.ebv.ebna <- na.omit(t.mpv.ebv.ebna)
+t.mpv.ebv.vcap18 <- na.omit(t.mpv.ebv.vcap18)
+t.mpv.ebv.zebra <- na.omit(t.mpv.ebv.zebra)
+t.mpv.hhv6.IE1A <- na.omit(t.mpv.hhv6.IE1A)
+t.mpv.hhv7.u14 <- na.omit(t.mpv.hhv7.u14)
+t.mpv.hsv1.1gG <- na.omit(t.mpv.hsv1.1gG)
+t.mpv.vsv.gEgI <- na.omit(t.mpv.vsv.gEgI)
+t.mpv.bkv.vp1 <- na.omit(t.mpv.bkv.vp1)
+t.mpv.jcv.vp1 <- na.omit(t.mpv.jcv.vp1)
+t.mpv.mcv.vp1 <- na.omit(t.mpv.mcv.vp1)
+
+#Perform linear regression of platelet phenotypes on common infection
+#PLT on TG SAG1
+obs.model.PLT.TG.SAG1 <- lm(PLT_initial_SD ~ TG_SAG1_RINT + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.tg.sag1)
+
+summary(obs.model.PLT.TG.SAG1)
+summary(obs.model.PLT.TG.SAG1)$coef[2] #Observational estimate
+summary(obs.model.PLT.TG.SAG1)$coef[2,2] #Standard error of observational estimate
+
+#PLT on CMV pp52
+obs.model.CMV.pp52 <- lm(PLT_initial_SD ~ CMV_pp52_RINT + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.cmv.pp52)
+
