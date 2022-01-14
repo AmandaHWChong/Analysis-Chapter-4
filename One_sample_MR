@@ -67,5 +67,30 @@ t.plt.prs.sd <- PLT_PRS_SD[c("FID", "IID", "PLT_PRS_SD")]
 t.mpv.prs.sd <- MPV_PRS_SD[c("FID", "IID", "MPV_PRS_SD")] 
 
 #Join the two datasets 
-
+t.plt.TG.sag1.prs <- full_join(t.plt.TG.sag1, t.plt.prs.sd, by = c("FID", "IID")) 
+t.plt.cmv.pp52.prs <- full_join(t.plt.cmv.pp52, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.ebv.ead.prs <- full_join(t.plt.ebv.ead.prs, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.ebv.ebna.prs <- full_join(t.plt.ebv.ebna, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.ebv.vcap18.prs <- full_join(t.plt.ebv.vcap18, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.ebv.zebra.prs <- full_join(t.plt.ebv.zebra, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.hhv6.IE1A.prs <- full_join(t.plt.hhv6.IE1A, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.hhv7.u14 .prs <- full_join(t.plt.hhv7.u14, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.hsv1.1gG.prs <- full_join(t.plt.hsv1.1gG, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.vsv.gEgI.prs <- full_join(t.plt.vsv.gEgI, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.bkv.vp1.prs <- full_join(t.plt.bkv.vp1, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.jcv.vp1.prs <- full_join(t.plt.jcv.vp1, t.plt.prs.sd, by = c("FID", "IID"))
+t.plt.mcv.vp1 .prs <- full_join(t.plt.mcv.vp1, t.plt.prs.sd, by = c("FID", "IID"))
+t.mpv.TG.sag1.prs <- full_join(t.mpv.TG.sag1, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.cmv.pp52.prs <- full_join(t.mpv.cmv.pp52, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.ebv.ead.prs <- full_join(t.mpv.ebv.ead, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.ebv.ebna.prs <- full_join(t.mpv.ebv.ebna, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.ebv.vcap18.prs <- full_join(t.mpv.ebv.vcap18, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.ebv.zebra.prs <- full_join(t.mpv.ebv.zebra, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.hhv6.IE1A.prs <- full_join(t.mpv.hhv6.IE1A, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.hhv7.u14.prs <- full_join(t.mpv.hhv7.u14, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.hsv1.1gG.prs <- full_join(t.mpv.hsv1.1gG, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.vsv.gEgI.prs <- full_join(t.mpv.vsv.gEgI, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.bkv.vp1.prs <- full_join(t.mpv.bkv.vp1, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.jcv.vp1 .prs <- full_join(t.mpv.jcv.vp1, t.mpv.prs.sd, by = c("FID", "IID"))
+t.mpv.mcv.vp1.prs <- full_join(t.mpv.mcv.vp1, t.mpv.prs.sd, by = c("FID", "IID"))
 
