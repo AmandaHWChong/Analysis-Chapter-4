@@ -2,6 +2,7 @@
 
 #Read in relevant packages
 library(dplyr)
+library(ivreg)
 
 #Read in data
 data <- read.table()
@@ -64,4 +65,7 @@ t.mpv.mcv.vp1 <- data[c("FID", "IID", "MPV_initial_SD", "MCV_VP1_RINT", "sex", "
 #Subset each platelet PRS 
 t.plt.prs.sd <- PLT_PRS_SD[c("FID", "IID", "PLT_PRS_SD")]
 t.mpv.prs.sd <- MPV_PRS_SD[c("FID", "IID", "MPV_PRS_SD")] 
+
+#Join the two datasets 
+
 
