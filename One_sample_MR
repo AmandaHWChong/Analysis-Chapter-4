@@ -150,3 +150,6 @@ iv.model.plt.ebv.ebna <- <- ivreg(PLT_initial_SD ~ EBV_EBNA_RINT + sex + age_ini
 summary(iv.model.plt.ebv.ebna)
 summary(iv.model.plt.ebv.ebna)$coef[2] # 2SLS estimate 
 summary(iv.model.plt.ebv.ebna)$coef[2,2] # Standard error of 2SLS estimate 
+
+#Platelet count on EBV VCA p18
+iv.model.plt.ebv.vca.p18 <- ivreg(PLT_initial_SD ~ 
