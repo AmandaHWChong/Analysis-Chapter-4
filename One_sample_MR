@@ -124,6 +124,29 @@ t.mpv.mcv.vp1.prs <- na.omit(t.mpv.mcv.vp1.prs)
 
 #2SLS analyses - Continuous outcomes - Platelet phenotypes on common infection 
 #Platelet count on TG SAG1
-iv.model.plt.tg.sag1 = ivreg(PLT_initial_SD ~ TG_SAG1_RINT + sex + age_initialrecruitment | PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.plt.TG.sag1.prs) 
+iv.model.plt.tg.sag1 <- ivreg(PLT_initial_SD ~ TG_SAG1_RINT + sex + age_initialrecruitment | PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.plt.TG.sag1.prs) 
 
+summary(iv.model.plt.tg.sag1)
+summary(iv.model.plt.tg.sag1)$coef[2] # 2SLS estimate 
+summary(iv.model.plt.tg.sag1)$coef[2,2] # Standard error of 2SLS estimate 
 
+#Platelet count on CMV pp52
+iv.model.plt.cmv.pp52 <- ivreg(PLT_initial_SD ~ CMV_pp52_RINT + sex + age_initialrecruitment | PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.plt.cmv.pp52.prs) 
+
+summary(iv.model.plt.cmv.pp52)
+summary(iv.model.plt.cmv.pp52)$coef[2] # 2SLS estimate 
+summary(iv.model.plt.cmv.pp52)$coef[2,2] # Standard error of 2SLS estimate 
+
+#Platelet count on EBV EA-D 
+iv.model.plt.ebv.ead <- ivreg(PLT_initial_SD ~ EBV_EAD_RINT + sex + age_initialrecruitment | PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.plt.ebv.ead.prs) 
+
+summary(iv.model.plt.ebv.ead)
+summary(iv.model.plt.ebv.ead)$coef[2] # 2SLS estimate 
+summary(iv.model.plt.ebv.ead)$coef[2,2] # Standard error of 2SLS estimate 
+
+#Platelet count on EBV EBNA 
+iv.model.plt.ebv.ebna <- <- ivreg(PLT_initial_SD ~ EBV_EBNA_RINT + sex + age_initialrecruitment | PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.plt.ebv.ebna.prs) 
+
+summary(iv.model.plt.ebv.ebna)
+summary(iv.model.plt.ebv.ebna)$coef[2] # 2SLS estimate 
+summary(iv.model.plt.ebv.ebna)$coef[2,2] # Standard error of 2SLS estimate 
