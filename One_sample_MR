@@ -404,6 +404,97 @@ summary(iv.model.mcv.vp1.plt)
 summary(iv.model.mcv.vp1.plt)$coef[2] # 2SLS estimate 
 summary(iv.model.mcv.vp1.plt)$coef[2,2] # Standard error of 2SLS estimate 
 
+#TG SAG1 on MPV
+iv.model.tg.sag1.mpv <- ivreg(TG_SAG1_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40  |TG_SAG1_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.TG.sag1.prs) 
+
+summary(iv.model.mpv.tg.sag1)
+summary(iv.model.mpv.tg.sag1)$coef[2] # 2SLS estimate 
+summary(iv.model.mpv.tg.sag1)$coef[2,2] # Standard error of 2SLS estimate 
+
+#CMV pp52 on MPV
+iv.model.cmv.pp52.mpv <- ivreg(CMV_pp52_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | CMV_pp52_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.cmv.pp52.prs) 
+
+summary(iv.model.cmv.pp52.mpv)
+summary(iv.model.cmv.pp52.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.cmv.pp52.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#EBV EA-D on MPV
+iv.model.ebv.ead.mpv <- ivreg(EBV_EAD_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | EBV_EAD_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.ebv.ead.prs) 
+
+summary(iv.model.ebv.ead.mpv)
+summary(iv.model.ebv.ead.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.ebv.ead.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#EBV EBNA on MPV
+iv.model.ebv.ebna.mpv <- <- ivreg(EBV_EBNA_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | EBV_EBNA_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.ebv.ebna.prs) 
+
+summary(iv.model.ebv.ebna.mpv)
+summary(iv.model.ebv.ebna.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.ebv.ebna.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#EBV VCA p18 on MPV
+#Platelet count on EBV VCA p18
+iv.model.ebv.vca.p18.mpv <- ivreg(EBV_VCAp18_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | EBV_VCAp18_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.ebv.vcap18.prs)
+
+summary(iv.model.ebv.vca.p18.mpv)
+summary(iv.model.ebv.vca.p18.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.ebv.vca.p18.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#EBV ZEBRA on MPV
+iv.model.ebv.zebra.mpv <- ivreg(EBV_ZEBRA_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | EBV_ZEBRA_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.ebv.zebra.prs)
+
+summary(iv.model.ebv.zebra.mpv)
+summary(iv.model.ebv.zebra.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.ebv.zebra.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#HHV6 IE1A on MPV
+iv.model.hhv6.IE1A.mpv <- ivreg(HHV6_IE1A_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | HHV6_IE1A_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.hhv6.IE1A.prs) 
+
+summary(iv.model.hhv6.IE1A.mpv)
+summary(iv.model.hhv6.IE1A.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.hhv6.IE1A.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#HHV7 U14 on MPV
+iv.model.hhv7.u14.mpv <- ivreg(HHV7_U14_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | HHV7_U14_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.hhv7.u14.prs) 
+
+summary(iv.model.hhv7.u14.mpv)
+summary(iv.model.hhv7.u14.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.hhv7.u14.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#HSV1 1gG on MPV
+iv.model.hsv1.1gG.mpv <- ivreg(HSV1_1gG_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | HSV1_1gG_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.hsv1.1gG.prs)
+
+summary(iv.model.hsv1.1gG.mpv)
+summary(iv.model.hsv1.1gG.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.hsv1.1gG.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#VSV gEgI on MPV
+iv.model.vsv.gEgI.mpv <- ivreg(VSV_gEgI_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | VSV_gEgI_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.vsv.gEgI.prs) 
+
+summary(iv.model.vsv.gEgI.mpv)
+summary(iv.model.vsv.gEgI.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.vsv.gEgI.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#BKV VP1 on MPV
+iv.model.bkv.vp1.mpv <- ivreg(BKV_VP1_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | BKV_VP1_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.bkv.vp1.prs)
+
+summary(iv.model.bkv.vp1.mpv)
+summary(iv.model.bkv.vp1.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.bkv.vp1.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#JCV VP1 on MPV
+iv.model.jcv.vp1.mpv <- ivreg(JCV_VP1_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | MPV_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.jcv.vp1.prs)
+
+summary(iv.model.jcv.vp1.mpv)
+summary(iv.model.jcv.vp1.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.jcv.vp1.mpv)$coef[2,2] # Standard error of 2SLS estimate 
+
+#MCV VP1 on MPV
+iv.model.mcv.vp1.mpv <- ivreg(MCV_VP1_RINT ~ MPV_initial_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40 | MCV_VP1_PRS_SD + sex + age_initialrecruitment + PC1 + PC2 + PC3 + PC4 + PC5 + PC6 + PC7 + PC8 + PC9 + PC10 + PC11 + PC12 + PC13 + PC14 + PC15 + PC16 + PC17 + PC18 + PC19 + PC20 + PC21 + PC22 + PC23 + PC24 + PC25 + PC26 + PC27 + PC28 + PC29 + PC30 + PC31 + PC32 + PC33 + PC34 + PC35 + PC36 + PC37 + PC38 + PC39 + PC40, x = TRUE, data = t.mpv.mcv.vp1.prs)
+
+summary(iv.model.mcv.vp1.mpv)
+summary(iv.model.mcv.vp1.mpv)$coef[2] # 2SLS estimate 
+summary(iv.model.mcv.vp1.mpv)$coef[2,2] # Standard error of 2SLS estimate
 
 
 
