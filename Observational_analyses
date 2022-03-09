@@ -398,7 +398,7 @@ summary(obs.model.EBV.VCAp18.MPV)$coef[2] #Observational estimate
 summary(obs.model.EBV.VCAp18.MPV)$coef[2,2] #Standard error of observational estimate
 
 #EBV ZEBRA on MPV
-obs.model.EBV.ZEBRA.MPV <- lm(MEBV_ZEBRA_RINT ~ MPV_initial_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.ebv.zebra)
+obs.model.EBV.ZEBRA.MPV <- lm(EBV_ZEBRA_RINT ~ MPV_initial_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.ebv.zebra)
 
 summary(obs.model.EBV.ZEBRA.MPV)
 summary(obs.model.EBV.ZEBRA.MPV)$coef[2] #Observational estimate
