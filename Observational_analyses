@@ -4,7 +4,7 @@
 library(dplyr)
 
 #Read in data
-data <- read.table()
+data <- read.table(Bidirectional_UKBB_platelet_infections_covariates_PC40_input)
 
 Subset each exposures of interest with each outcome of interest, plus covariates
 t.plt.TG.sag1 <- data[c("FID", "IID", "PLT_initial_SD", "TG_SAG1_RINT", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
