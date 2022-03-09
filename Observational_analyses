@@ -447,7 +447,7 @@ summary(obs.model.JCV.VP1.MPV)$coef[2] #Observational estimate
 summary(obs.model.JCV.VP1.MPV)$coef[2,2] #Standard error of observational estimate
 
 #MCV VP1 on MPV
-obs.model.MCV.VP1.MPV <- lm(MCV_VP1_RINT ~ MPV_initial_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.MPV.mcv.vp1)
+obs.model.MCV.VP1.MPV <- lm(MCV_VP1_RINT ~ MPV_initial_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.mcv.vp1)
 
 summary(obs.model.MCV.VP1.MPV)
 summary(obs.model.MCV.VP1.MPV)$coef[2] #Observational estimate
