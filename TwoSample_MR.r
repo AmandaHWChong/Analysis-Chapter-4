@@ -43,7 +43,17 @@ write.table(or_results_res,"MR_OR_exposure_outcome",sep="\t",col.names=T,row.nam
 write.table(Res_MR_PRESSO, "MR_PRESSO_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F) 
 write.table(Res_mr_leaveoneout, "Res_mr_leaveoneout_exposure_outcome", sep="\t",col.names=T,row.names=F,quote=F) 
 
-##Check instrument strength 
+##Two-sample MR: Platelet function on common infections##
+
+#Extract platelet function exposures
+ao<-available_outcomes()
+id.platelet.exp <- c(" ", " ")
+exposure <- extract_instruments(id.platelet.exp)
+
+#Read in outcome data 
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "outcome_data", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "ALT", other_allele_col = "REF")
+                                 
+##Check instrument strength## 
 
 #Rename required columns
 exposure$BetaXG<- exposure$beta.exposure
