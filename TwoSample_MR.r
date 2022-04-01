@@ -50,9 +50,33 @@ ao<-available_outcomes()
 id.platelet.exp <- c("ieu-a-1008", "ieu-a-1006")
 exposure <- extract_instruments(id.platelet.exp)
 
+#LD clumping 
+try(exposure <- clump_data(exposure)) 
+
 #Read in outcome data 
 outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "outcome_data", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "ALT", other_allele_col = "REF")
                                  
+#Harmonise exposure and outcome data 
+dat <- harmonise_data(exposure_dat = exposure, outcome_dat = outcome_dat)
+
+#MR analysis 
+Res <- mr(dat) #IVW (default), Egger, WM, MODE, Wald ratio 
+Res_pleio <- mr_pleiotropy_test(dat) # MR-Egger intercept test 
+Res_hetero <- mr_heterogeneity(dat) #
+Res_single <- mr_singlesnp(dat) #single SNP analysis
+or_results_res <- generate_odds_ratios(Res) #Odds ratio 
+Res_MR_PRESSO <- run_mr_presso(dat) #Run if there is evidence of heterogeneity in Res_hetero findings 
+Res_mr_leaveoneout <- mr_leaveoneout(dat, parameters = default_parameters(), method = mr_ivw)
+
+#Write results 
+write.table(Res,"MR_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F)
+write.table(Res_pleio,"MR_pleio_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F)
+write.table(Res_hetero,"MR_hetero_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F)
+write.table(Res_single,"MR_single_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F)
+write.table(or_results_res,"MR_OR_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F)
+write.table(Res_MR_PRESSO, "MR_PRESSO_exposure_outcome",sep="\t",col.names=T,row.names=F,quote=F) 
+write.table(Res_mr_leaveoneout, "Res_mr_leaveoneout_exposure_outcome", sep="\t",col.names=T,row.names=F,quote=F) 
+
 ##Check instrument strength## 
 
 #Rename required columns
