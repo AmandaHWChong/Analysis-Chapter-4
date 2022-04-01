@@ -47,7 +47,7 @@ write.table(Res_mr_leaveoneout, "Res_mr_leaveoneout_exposure_outcome", sep="\t",
 
 #Extract platelet function exposures
 ao<-available_outcomes()
-id.platelet.exp <- c(" ", " ")
+id.platelet.exp <- c("ieu-a-1008", "ieu-a-1006")
 exposure <- extract_instruments(id.platelet.exp)
 
 #Read in outcome data 
