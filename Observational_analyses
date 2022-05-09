@@ -6,7 +6,7 @@ library(dplyr)
 
 
 #Read in data
-data <- read.table("Bidirectional_UKBB_platelet_infections_covariates_PC40_input_FINAL", header = T)
+data <- read.table("Bidirectional_UKBB_plateletSD__infectionsSD_covariates_PC40_input_FINAL", header = T)
 
 
 Subset each exposures of interest with each outcome of interest, plus covariates
