@@ -19,7 +19,7 @@ t.plt.cmv.pp52 <- data[c("FID", "IID", "PLT_initial_SD", "CMV_pp52_SD", "alcinta
 t.plt.ebv.ead <- data[c("FID", "IID", "PLT_initial_SD", "EBV_EAD_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.plt.ebv.ebna <- data[c("FID", "IID", "PLT_initial_SD", "EBV_EBNA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.ebv.ebna <- data[c("FID", "IID", "PLT_initial_SD", "EBV_EBNA1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 t.plt.ebv.vcap18 <- data[c("FID", "IID", "PLT_initial_SD", "EBV_VCAp18_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
@@ -28,16 +28,16 @@ t.plt.ebv.vcap18 <- data[c("FID", "IID", "PLT_initial_SD", "EBV_VCAp18_SD", "alc
 t.plt.ebv.zebra <- data[c("FID", "IID", "PLT_initial_SD", "EBV_ZEBRA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.plt.hhv6.IE1A <- data[c("FID", "IID", "PLT_initial_SD", "HHV6_IE1A_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hhv6.IE1A <- data[c("FID", "IID", "PLT_initial_SD", "HH6_IE1A_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.plt.hhv7.u14 <- data[c("FID", "IID", "PLT_initial_SD", "HHV7_U14_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hhv7.u14 <- data[c("FID", "IID", "PLT_initial_SD", "HH7_U14_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 t.plt.hsv1.1gG <- data[c("FID", "IID", "PLT_initial_SD", "HSV1_1gG_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.plt.vsv.gEgI <- data[c("FID", "IID", "PLT_initial_SD", "VSV_gEgI_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.vsv.gEgI <- data[c("FID", "IID", "PLT_initial_SD", "VZV_gEgI_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 t.plt.bkv.vp1 <- data[c("FID", "IID", "PLT_initial_SD", "BKV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
@@ -58,7 +58,7 @@ t.mpv.cmv.pp52 <- data[c("FID", "IID", "MPV_initial_SD", "CMV_pp52_SD", "alcinta
 t.mpv.ebv.ead <- data[c("FID", "IID", "MPV_initial_SD", "EBV_EAD_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.mpv.ebv.ebna <- data[c("FID", "IID", "MPV_initial_SD", "EBV_EBNA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.ebv.ebna <- data[c("FID", "IID", "MPV_initial_SD", "EBV_EBNA1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 t.mpv.ebv.vcap18 <- data[c("FID", "IID", "MPV_initial_SD", "EBV_VCAp18_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
@@ -67,16 +67,16 @@ t.mpv.ebv.vcap18 <- data[c("FID", "IID", "MPV_initial_SD", "EBV_VCAp18_SD", "alc
 t.mpv.ebv.zebra <- data[c("FID", "IID", "MPV_initial_SD", "EBV_ZEBRA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.mpv.hhv6.IE1A <- data[c("FID", "IID", "MPV_initial_SD", "HHV6_IE1A_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hhv6.IE1A <- data[c("FID", "IID", "MPV_initial_SD", "HH6_IE1A_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.mpv.hhv7.u14 <- data[c("FID", "IID", "MPV_initial_SD", "HHV7_U14_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hhv7.u14 <- data[c("FID", "IID", "MPV_initial_SD", "HH7_U14_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 t.mpv.hsv1.1gG <- data[c("FID", "IID", "MPV_initial_SD", "HSV1_1gG_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
-t.mpv.vsv.gEgI <- data[c("FID", "IID", "MPV_initial_SD", "VSV_gEgI_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.vsv.gEgI <- data[c("FID", "IID", "MPV_initial_SD", "VZV_gEgI_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 t.mpv.bkv.vp1 <- data[c("FID", "IID", "MPV_initial_SD", "BKV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
@@ -146,7 +146,7 @@ summary(obs.model.PLT.EBV.EAD)$coef[2,2] #Standard error of observational estima
 
 
 #PLT on EBV EBNA 
-obs.model.PLT.EBV.EBNA <- lm(PLT_initial_SD ~ EBV_EBNA_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.ebv.ebna)
+obs.model.PLT.EBV.EBNA <- lm(PLT_initial_SD ~ EBV_EBNA1_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.ebv.ebna)
 
 
 summary(obs.model.PLT.EBV.EBNA)
@@ -173,7 +173,7 @@ summary(obs.model.PLT.EBV.ZEBRA)$coef[2,2] #Standard error of observational esti
 
 
 #PLT on HHV6 IE1A 
-obs.model.PLT.HHV6.IE1A <- lm(PLT_initial_SD ~ HHV6_IE1A_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv6.IE1A)
+obs.model.PLT.HHV6.IE1A <- lm(PLT_initial_SD ~ HH6_IE1A_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv6.IE1A)
 
 
 summary(obs.model.PLT.HHV6.IE1A)
@@ -182,7 +182,7 @@ summary(obs.model.PLT.HHV6.IE1A)$coef[2,2] #Standard error of observational esti
 
 
 #PLT on HHV7 U14 
-obs.model.PLT.HHV7.U14 <- lm(PLT_initial_SD ~ HHV7_U14_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv7.u14)
+obs.model.PLT.HHV7.U14 <- lm(PLT_initial_SD ~ HH7_U14_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv7.u14)
 
 
 summary(obs.model.PLT.HHV7.U14)
@@ -200,7 +200,7 @@ summary(obs.model.PLT.HSV1.1gG)$coef[2,2] #Standard error of observational estim
 
 
 #PLT on VSV gE/GI
-obs.model.PLT.VSV.gEgI <- lm(PLT_initial_SD ~ VSV_gEgI_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.vsv.gEgI)
+obs.model.PLT.VSV.gEgI <- lm(PLT_initial_SD ~ VZV_gEgI_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.vsv.gEgI)
 
 
 summary(obs.model.PLT.VSV.gEgI)
@@ -263,7 +263,7 @@ summary(obs.model.MPV.EBV.EAD)$coef[2,2] #Standard error of observational estima
 
 
 #MPV on EBV EBNA 
-obs.model.MPV.EBV.EBNA <- lm(MPV_initial_SD ~ EBV_EBNA_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.ebv.ebna)
+obs.model.MPV.EBV.EBNA <- lm(MPV_initial_SD ~ EBV_EBNA1_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.ebv.ebna)
 
 
 summary(obs.model.MPV.EBV.EBNA)
@@ -290,7 +290,7 @@ summary(obs.model.MPV.EBV.ZEBRA)$coef[2,2] #Standard error of observational esti
 
 
 #MPV on HHV6 IE1A 
-obs.model.MPV.HHV6.IE1A <- lm(MPV_initial_SD ~ HHV6_IE1A_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv6.IE1A)
+obs.model.MPV.HHV6.IE1A <- lm(MPV_initial_SD ~ HH6_IE1A_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv6.IE1A)
 
 
 summary(obs.model.MPV.HHV6.IE1A)
@@ -299,7 +299,7 @@ summary(obs.model.MPV.HHV6.IE1A)$coef[2,2] #Standard error of observational esti
 
 
 #MPV on HHV7 U14 
-obs.model.MPV.HHV7.U14 <- lm(MPV_initial_SD ~ HHV7_U14_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv7.u14)
+obs.model.MPV.HHV7.U14 <- lm(MPV_initial_SD ~ HH7_U14_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv7.u14)
 
 
 summary(obs.model.MPV.HHV7.U14)
@@ -317,7 +317,7 @@ summary(obs.model.MPV.HSV1.1gG)$coef[2,2] #Standard error of observational estim
 
 
 #MPV on VSV gE/GI
-obs.model.MPV.VSV.gEgI <- lm(MPV_initial_SD ~ VSV_gEgI_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.vsv.gEgI)
+obs.model.MPV.VSV.gEgI <- lm(MPV_initial_SD ~ VZV_gEgI_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.vsv.gEgI)
 
 
 summary(obs.model.MPV.VSV.gEgI)
@@ -381,7 +381,7 @@ summary(obs.model.EBV.EAD.PLT)$coef[2,2] #Standard error of observational estima
 
 
 #EBV EBNA on PLT 
-obs.model.EBV.EBNA.PLT <- lm(EBV_EBNA_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.ebv.ebna)
+obs.model.EBV.EBNA.PLT <- lm(EBV_EBNA1_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.ebv.ebna)
 
 
 summary(obs.model.EBV.EBNA.PLT)
@@ -408,7 +408,7 @@ summary(obs.model.EBV.ZEBRA.PLT)$coef[2,2] #Standard error of observational esti
 
 
 #HHV6 IE1A on PLT 
-obs.model.HHV6.IE1A.PLT <- lm(HHV6_IE1A_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv6.IE1A)
+obs.model.HHV6.IE1A.PLT <- lm(HH6_IE1A_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv6.IE1A)
 
 
 summary(obs.model.HHV6.IE1A.PLT)
@@ -417,7 +417,7 @@ summary(obs.model.HHV6.IE1A.PLT)$coef[2,2] #Standard error of observational esti
 
 
 #HHV7 U14 on PLT 
-obs.model.HHV7.U14.PLT <- lm(HHV7_U14_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv7.u14)
+obs.model.HHV7.U14.PLT <- lm(HH7_U14_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.hhv7.u14)
 
 
 summary(obs.model.HHV7.U14.PLT)
@@ -435,7 +435,7 @@ summary(obs.model.HSV1.1gG.PLT)$coef[2,2] #Standard error of observational estim
 
 
 #VSV gE/GI on PLT
-obs.model.VSV.gEgI.PLT <- lm(VSV_gEgI_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.vsv.gEgI)
+obs.model.VSV.gEgI.PLT <- lm(VZV_gEgI_SD ~ PLT_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.plt.vsv.gEgI)
 
 
 summary(obs.model.VSV.gEgI.PLT)
@@ -498,7 +498,7 @@ summary(obs.model.EBV.EAD.MPV)$coef[2,2] #Standard error of observational estima
 
 
 #EBV EBNA on MPV 
-obs.model.EBV.EBNA.MPV <- lm(EBV_EBNA_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.ebv.ebna)
+obs.model.EBV.EBNA.MPV <- lm(EBV_EBNA1_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.ebv.ebna)
 
 
 summary(obs.model.EBV.EBNA.MPV)
@@ -525,7 +525,7 @@ summary(obs.model.EBV.ZEBRA.MPV)$coef[2,2] #Standard error of observational esti
 
 
 #HHV6 IE1A on MPV 
-obs.model.HHV6.IE1A.MPV <- lm(HHV6_IE1A_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv6.IE1A)
+obs.model.HHV6.IE1A.MPV <- lm(HH6_IE1A_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv6.IE1A)
 
 
 summary(obs.model.HHV6.IE1A.MPV)
@@ -534,7 +534,7 @@ summary(obs.model.HHV6.IE1A.MPV)$coef[2,2] #Standard error of observational esti
 
 
 #HHV7 U14 on MPV 
-obs.model.HHV7.U14.MPV <- lm(HHV7_U14_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv7.u14)
+obs.model.HHV7.U14.MPV <- lm(HH7_U14_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hhv7.u14)
 
 
 summary(obs.model.HHV7.U14.MPV)
@@ -552,7 +552,7 @@ summary(obs.model.HSV1.1gG.MPV)$coef[2,2] #Standard error of observational estim
 
 
 #VSV gE/GI on MPV
-obs.model.VSV.gEgI.MPV <- lm(VSV_gEgI_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.vsv.gEgI)
+obs.model.VSV.gEgI.MPV <- lm(VZV_gEgI_SD ~ MPV_initial_SD_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.vsv.gEgI)
 
 
 summary(obs.model.VSV.gEgI.MPV)
