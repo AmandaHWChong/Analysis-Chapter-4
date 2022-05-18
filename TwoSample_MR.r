@@ -11,8 +11,20 @@ library(TwoSampleMR)
 ##Two-sample MR: Common infections on platelet function##
 
 #Read in infection exposure data
-data <- read.table("exposure_data", header = T)
-exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "SNP", chr_col = "Chr", pos_col = "Pos", effect_allele_col = "EA", other_allele_col = "OA", pval_col = "Pval", samplesize_col = "N", eaf_col = "EAF", beta_col = "Beta", se_col = "SE", phenotype_col = "Phenotype")
+#EBV EA-D
+data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_EBV_EAD_5E08.txt", header = T)
+exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
+
+#EBV-EBNA 
+data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_EBV_EBNA_5E08.txt", header = T)
+exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
+
+#BKV VP1
+data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_BKV_5E08.txt", header = T)
+exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
+
+#VSV gEgI
+data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV_5E08.txt", header = T) 
 
 #LD clumping 
 try(exposure <- clump_data(exposure)) 
