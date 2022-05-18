@@ -61,14 +61,29 @@ write.table(Res_mr_leaveoneout, "Res_mr_leaveoneout_exposure_outcome", sep="\t",
 
 #Extract platelet function exposures
 ao<-available_outcomes()
-id.platelet.exp <- c("ieu-a-1008", "ieu-a-1006")
-exposure <- extract_instruments(id.platelet.exp)
+id.plt.exp <- c("ieu-a-1008")
+exposure <- extract_instruments(id.plt.exp)
+
+#OR
+
+id.mpv.exp <- c("ieu-a-1006")
+exposure <- extract_instruments(id.mpv.exp)
 
 #LD clumping 
 try(exposure <- clump_data(exposure)) 
 
 #Read in outcome data 
-outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "outcome_data", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "ALT", other_allele_col = "REF")
+#EBV EA-D
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_EBV_EAD.txt", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", eaf_col = "EAF")
+
+#EBV EBNA 
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_EBV_EBNA.txt", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", eaf_col = "EAF")
+
+#BKV VP1 
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_BKV.txt", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", eaf_col = "EAF")
+
+#VSV gEgI
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV.txt", sep = "\t", snp_col = "ID", beta_col = "BETA", se_col = "SE", pval_col = "P", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", eaf_col = "EAF")
                                  
 #Harmonise exposure and outcome data 
 dat <- harmonise_data(exposure_dat = exposure, outcome_dat = outcome_dat)
