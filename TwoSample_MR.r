@@ -25,6 +25,7 @@ exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", c
 
 #VSV gEgI
 data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV_5E08.txt", header = T) 
+data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV_rs9273325_proxy.txt", header = T) #Proxy
 exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
 
 #LD clumping 
