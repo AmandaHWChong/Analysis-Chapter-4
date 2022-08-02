@@ -28,6 +28,13 @@ data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/dat
 data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV_rs9273325_proxy.txt", header = T) #Proxy
 exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
 
+#Read in platelet GWAS data 
+PLT_data <- read.table("ieu-a-1008_PLT_SD", header = T)
+exposure <- format_data(PLT_data, type ="exposure", header = TRUE, snp_col = "SNP", chr_col = "chr", pos_col = "pos", beta_col = "beta_SD", se_col = "se_SD", pval_col = "pval", samplesize_col = "samplesize", effect_allele_col = "effect_allele", other_allele_col = "other_allele")
+
+MPV_data <- read.table("ieu-a-1006_MPV_SD", header = T)
+exposure <- format_data(MPV_data, type ="exposure", header = TRUE, snp_col = "SNP", chr_col = "chr", pos_col = "pos", beta_col = "beta_SD", se_col = "se_SD", pval_col = "pval", samplesize_col = "samplesize", effect_allele_col = "effect_allele", other_allele_col = "other_allele")
+
 #LD clumping 
 try(exposure <- clump_data(exposure)) 
 
@@ -35,6 +42,14 @@ try(exposure <- clump_data(exposure))
 ao<-available_outcomes()
 id.cvd.out <- c("ieu-a-1008", "ieu-a-1006")
 outcome_dat <- extract_outcome_data(snps = exposure$SNP, outcomes = id.cvd.out)
+
+#Read outcome data 
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "ukb_seroreact_EBV_EAD.txt", sep = "\t", snp_col = "ID", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", beta_col = "BETA", se_col = "SE", eaf_col = "EAF", pval_col = "P")
+
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "ukb_seroreact_EBV_EBNA.txt", sep = "\t", snp_col = "ID", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", beta_col = "BETA", se_col = "SE", eaf_col = "EAF", pval_col = "P")
+
+outcome_dat <- read_outcome_data(snps = exposure$SNP, filename = "ukb_seroreact_VZV.txt", sep = "\t", snp_col = "ID", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", beta_col = "BETA", se_col = "SE", eaf_col = "EAF", pval_col = "P")
+
 
 #Harmonise exposure and outcome data 
 dat <- harmonise_data(exposure_dat = exposure, outcome_dat = outcome_dat)
