@@ -28,6 +28,10 @@ data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/dat
 data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV_rs9273325_proxy.txt", header = T) #Proxy
 exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
 
+#Read in additional infection exposure data 
+infection_exp <- c("ebi-a-GCST90006890", "ebi-a-GCST90006889", "ebi-a-GCST90006914", "ebi-a-GCST90006915", "ebi-a-GCST90006920")
+exposure <- extract_instruments(infection.exp)
+
 #Read in platelet GWAS data 
 PLT_data <- read.table("ieu-a-1008_PLT_SD", header = T)
 exposure <- format_data(PLT_data, type ="exposure", header = TRUE, snp_col = "SNP", chr_col = "chr", pos_col = "pos", beta_col = "beta_SD", se_col = "se_SD", pval_col = "pval", samplesize_col = "samplesize", effect_allele_col = "effect_allele", other_allele_col = "other_allele")
