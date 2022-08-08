@@ -29,8 +29,9 @@ data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/dat
 exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
 
 #Read in additional infection exposure data 
+ao<-available_outcomes()
 infection_exp <- c("ebi-a-GCST90006890", "ebi-a-GCST90006889", "ebi-a-GCST90006914", "ebi-a-GCST90006915", "ebi-a-GCST90006920")
-exposure <- extract_instruments(infection.exp)
+exposure <- extract_instruments(infection_exp)
 
 #Read in platelet GWAS data 
 PLT_data <- read.table("ieu-a-1008_PLT_SD", header = T)
