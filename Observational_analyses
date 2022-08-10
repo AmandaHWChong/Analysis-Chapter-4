@@ -612,3 +612,53 @@ obs.model.MCV.VP1.MPV <- lm(MCV_VP1_SD ~ MPV_initial_SD + eversmoked_initialasse
 summary(obs.model.MCV.VP1.MPV)
 summary(obs.model.MCV.VP1.MPV)$coef[2] #Observational estimate
 summary(obs.model.MCV.VP1.MPV)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HSV2 2mgG 
+obs.model.MPV.HSV2.2mgG <- lm(MPV_initial ~ HSV2_2mgG_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hsv2.2mgG)
+
+summary(obs.model.MPV.HSV2.2mgG)
+summary(obs.model.MPV.HSV2.2mgG)$coef[2] #Observational estimate
+summary(obs.model.MPV.HSV2.2mgG)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HP CAGA 
+obs.model.MPV.HP.CAGA <- lm(MPV_initial ~ HP_CAGA_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hp.caga)
+
+summary(obs.model.MPV.HP.CAGA)
+summary(obs.model.MPV.HP.CAGA)$coef[2] #Observational estimate
+summary(obs.model.MPV.HP.CAGA)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HP Catalase 
+obs.model.MPV.HP.catalase <- lm(MPV_initial ~ HP_Catalase_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hp.catalase)
+
+summary(obs.model.MPV.HP.catalase)
+summary(obs.model.MPV.HP.catalase)$coef[2] #Observational estimate
+summary(obs.model.MPV.HP.catalase)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HP GroEL
+obs.model.MPV.HP.GroEL <- lm(MPV_initial ~ HP_GroEL_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hp.groel)
+
+summary(obs.model.MPV.HP.GroEL)
+summary(obs.model.MPV.HP.GroEL)$coef[2] #Observational estimate
+summary(obs.model.MPV.HP.GroEL)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HP OMP
+obs.model.MPV.HP.OMP <- lm(MPV_initial ~ HP_OMP_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hp.omp)
+
+summary(obs.model.MPV.HP.OMP)
+summary(obs.model.MPV.HP.OMP)$coef[2] #Observational estimate
+summary(obs.model.MPV.HP.OMP)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HP UreA 
+obs.model.MPV.HP.UreA <- lm(MPV_initial ~ HP_UreA_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hp.urea)
+
+summary(obs.model.MPV.HP.UreA)
+summary(obs.model.MPV.HP.UreA)$coef[2] #Observational estimate
+summary(obs.model.MPV.HP.UreA)$coef[2,2] #Standard error of observational estimate
+
+#MPV on HP VacA 
+obs.model.MPV.HP.VacA <- lm(MPV_initial ~ HP_VacA_SD + eversmoked_initialassessment + BMI_initialassessment + HDL_initialassessment + LDL_initialassessment + triglycerides_initialassessment + sex + age_initialrecruitment, data = t.mpv.hp.vaca)
+
+summary(obs.model.MPV.HP.VacA)
+summary(obs.model.MPV.HP.VacA)$coef[2] #Observational estimate
+summary(obs.model.MPV.HP.VacA)$coef[2,2] #Standard error of observational estimate
+
