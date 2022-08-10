@@ -11,81 +11,45 @@ data <- read.table("Bidirectional_UKBB_platelet_infectionsSD_covariates_PC40_inp
 
 Subset each exposures of interest with each outcome of interest, plus covariates
 t.plt.TG.sag1 <- data[c("FID", "IID", "PLT_initial", "TG_SAG1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.cmv.pp52 <- data[c("FID", "IID", "PLT_initial", "CMV_pp52_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.ebv.ead <- data[c("FID", "IID", "PLT_initial", "EBV_EAD_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.ebv.ebna <- data[c("FID", "IID", "PLT_initial", "EBV_EBNA1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.ebv.vcap18 <- data[c("FID", "IID", "PLT_initial", "EBV_VCAp18_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.ebv.zebra <- data[c("FID", "IID", "PLT_initial", "EBV_ZEBRA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.hhv6.IE1A <- data[c("FID", "IID", "PLT_initial", "HH6_IE1A_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.hhv7.u14 <- data[c("FID", "IID", "PLT_initial", "HH7_U14_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.hsv1.1gG <- data[c("FID", "IID", "PLT_initial", "HSV1_1gG_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.vsv.gEgI <- data[c("FID", "IID", "PLT_initial", "VZV_gEgI_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.bkv.vp1 <- data[c("FID", "IID", "PLT_initial", "BKV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.jcv.vp1 <- data[c("FID", "IID", "PLT_initial", "JCV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.plt.mcv.vp1 <- data[c("FID", "IID", "PLT_initial", "MCV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
+t.plt.hsv2.2mgG <- data[c("FID", "IID", "PLT_initial", "HSV2_2mgG_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hp.caga <- data[c("FID", "IID", "PLT_initial", "HP_CAGA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hp.catalase <- data[c("FID", "IID", "PLT_initial", "HP_Catalase_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hp.groel <- data[c("FID", "IID", "PLT_initial", "HP_GroEL_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hp.omp <- data[c("FID", "IID", "PLT_initial", "HP_OMP_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hp.urea <- data[c("FID", "IID", "PLT_initial", "HP_UreA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.plt.hp.vaca <- data[c("FID", "IID", "PLT_initial", "HP_VacA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 t.mpv.TG.sag1 <- data[c("FID", "IID", "MPV_initial", "TG_SAG1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.cmv.pp52 <- data[c("FID", "IID", "MPV_initial", "CMV_pp52_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.ebv.ead <- data[c("FID", "IID", "MPV_initial", "EBV_EAD_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.ebv.ebna <- data[c("FID", "IID", "MPV_initial", "EBV_EBNA1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.ebv.vcap18 <- data[c("FID", "IID", "MPV_initial", "EBV_VCAp18_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.ebv.zebra <- data[c("FID", "IID", "MPV_initial", "EBV_ZEBRA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.hhv6.IE1A <- data[c("FID", "IID", "MPV_initial", "HH6_IE1A_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.hhv7.u14 <- data[c("FID", "IID", "MPV_initial", "HH7_U14_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.hsv1.1gG <- data[c("FID", "IID", "MPV_initial", "HSV1_1gG_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.vsv.gEgI <- data[c("FID", "IID", "MPV_initial", "VZV_gEgI_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.bkv.vp1 <- data[c("FID", "IID", "MPV_initial", "BKV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.jcv.vp1 <- data[c("FID", "IID", "MPV_initial", "JCV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
-
-
 t.mpv.mcv.vp1 <- data[c("FID", "IID", "MPV_initial", "MCV_VP1_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hsv2.2mgG <- data[c("FID", "IID", "MPV_initial", "HSV2_2mgG_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hp.caga <- data[c("FID", "IID", "MPV_initial", "HP_CAGA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hp.catalase <- data[c("FID", "IID", "MPV_initial", "HP_Catalase_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hp.groel <- data[c("FID", "IID", "MPV_initial", "HP_GroEL_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hp.omp <- data[c("FID", "IID", "MPV_initial", "HP_OMP_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hp.urea <- data[c("FID", "IID", "MPV_initial", "HP_UreA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
+t.mpv.hp.vaca <- data[c("FID", "IID", "MPV_initial", "HP_VacA_SD", "alcintakefreq_initialassessment", "eversmoked_initialassessment", "BMI_initialassessment", "HDL_initialassessment", "LDL_initialassessment", "triglycerides_initialassessment", "sex", "age_initialrecruitment")]
 
 
 #Remove NAs from each subsetted dataframe
@@ -115,6 +79,7 @@ t.mpv.vsv.gEgI <- na.omit(t.mpv.vsv.gEgI)
 t.mpv.bkv.vp1 <- na.omit(t.mpv.bkv.vp1)
 t.mpv.jcv.vp1 <- na.omit(t.mpv.jcv.vp1)
 t.mpv.mcv.vp1 <- na.omit(t.mpv.mcv.vp1)
+
 
 
 #Perform linear regression of platelet phenotypes on common infection
