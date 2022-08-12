@@ -30,7 +30,7 @@ exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", c
 
 #Read in additional infection exposure data 
 ao<-available_outcomes()
-infection_exp <- c("ebi-a-GCST90006890", "ebi-a-GCST90006889", "ebi-a-GCST90006914", "ebi-a-GCST90006915", "ebi-a-GCST90006920")
+infection_exp <- c("ebi-a-GCST90006914", "ebi-a-GCST90006915")
 exposure <- extract_instruments(infection_exp)
 
 #Read in platelet GWAS data 
