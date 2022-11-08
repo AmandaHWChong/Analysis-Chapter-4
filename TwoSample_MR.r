@@ -24,6 +24,10 @@ data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/dat
 data <- read.table("/projects/MRC-IEU/research/projects/ieu1/wp1/028/working/data/results/UKBB/Kachuri_infection_GWAS/ukb_seroreact_VZV_rs9273325_proxy.txt", header = T) #Proxy
 exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "ID", chr_col = "CHR", pos_col = "POS", effect_allele_col = "EFFECT_ALLELE", other_allele_col = "OTHER_ALLELE", samplesize_col = "N", beta_col = "BETA", se_col = "SE", pval_col = "P", eaf_col = "EAF") 
 
+#H.pylori seropositivity 
+data <- read.table("Hpylori_GWAS_instrument_mayerele2015.txt", header = T)
+exposure <- format_data(data, type ="exposure", header = TRUE, snp_col = "SNP", beta_col = "beta", se_col = "se", eaf_col = "eaf", effect_allele_col = "effect_allele", other_allele_col = "other_allele", pval_col = "pval", phenotype_col = "Phenotype")
+
 #Read in additional infection exposure data 
 ao<-available_outcomes()
 infection_exp <- c("ebi-a-GCST90006914", "ebi-a-GCST90006915")
